@@ -17,6 +17,52 @@ A Flutter implementation of a YouTube-like application with a modern UI and smoo
 
 ## Getting Started
 
+### Repository Setup
+
+This project is maintained in two repositories for backup and mirroring purposes. Here's how to set up both remotes:
+
+#### Step 1 — Add the FIRST repo (origin)
+If not added yet:
+```bash
+git remote add origin https://github.com/voukengdongmofrankysteve/youtubeclone.git
+```
+
+Check remotes:
+```bash
+git remote -v
+```
+
+#### Step 2 — Add the SECOND repo (public)
+Add another remote called public:
+```bash
+git remote add public https://github.com/voukengdongmofrankysteve/youtube-clone.git
+```
+
+Check remotes again:
+```bash
+git remote -v
+```
+
+You should see:
+```
+origin  https://github.com/voukengdongmofrankysteve/youtubeclone.git (fetch)
+origin  https://github.com/voukengdongmofrankysteve/youtubeclone.git (push)
+public  https://github.com/voukengdongmofrankysteve/youtube-clone.git (fetch)
+public  https://github.com/voukengdongmofrankysteve/youtube-clone.git (push)
+```
+
+#### Pushing Changes to Both Repositories
+
+Push to origin (youtubeclone):
+```bash
+git push origin main
+```
+
+Push to public (youtube-clone):
+```bash
+git push public main
+```
+
 ### Prerequisites
 
 - Flutter SDK (latest stable version)
