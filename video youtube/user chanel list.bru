@@ -1,0 +1,20 @@
+meta {
+  name: user chanel list
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:8000/channels/me
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlckBleGFtcGxlLmNvbSIsImV4cCI6MTc2Mjg2NzY3NX0.YQii0fWDcyuygegDr7YPVqfIg-tkZ6ppvxJ5ZrCZFKw
+  Accept: application/json
+}
+
+settings {
+  encodeUrl: false
+}

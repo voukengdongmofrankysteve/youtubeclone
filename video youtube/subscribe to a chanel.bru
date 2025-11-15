@@ -1,0 +1,23 @@
+meta {
+  name: subscribe to a chanel
+  type: http
+  seq: 9
+}
+
+post {
+  url: http://localhost:8000/channels/4/subscribe
+  body: none
+  auth: bearer
+}
+
+headers {
+  Authorization: Bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlckBleGFtcGxlLmNvbSIsImV4cCI6MTc2Mjg2NzY3NX0.YQii0fWDcyuygegDr7YPVqfIg-tkZ6ppvxJ5ZrCZFKw
+}
+
+settings {
+  encodeUrl: false
+}

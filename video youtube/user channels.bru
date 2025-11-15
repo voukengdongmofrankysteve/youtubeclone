@@ -1,0 +1,30 @@
+meta {
+  name: user channels
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8000/channels
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlckBleGFtcGxlLmNvbSIsImV4cCI6MTc2Mjg2NzY3NX0.YQii0fWDcyuygegDr7YPVqfIg-tkZ6ppvxJ5ZrCZFKw
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "channel_name": "My Gaming Channel",
+    "handle": "gaming_master_2024",
+    "description": "Welcome to my gaming channel! Here you will find gameplay, reviews, and tutorials.",
+    "banner_url": "https://example.com/banner.jpg",
+    "avatar_url": "https://example.com/channel-avatar.jpg"
+  }
+}
+
+settings {
+  encodeUrl: false
+}

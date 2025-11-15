@@ -1,0 +1,19 @@
+meta {
+  name: check server healt
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8000
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+settings {
+  encodeUrl: false
+}
